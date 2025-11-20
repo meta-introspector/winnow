@@ -86,14 +86,14 @@
 # wildcard_imports = "allow"
 # zero_sized_map_values = "warn"
 
-[profile.dev]
-panic = "abort"
+# [profile.dev]
+# panic = "abort"
 
-[profile.release]
-panic = "abort"
-codegen-units = 1
-lto = true
-# debug = "line-tables-only"  # requires Cargo 1.71
+# [profile.release]
+# panic = "abort"
+# codegen-units = 1
+# lto = true
+# # debug = "line-tables-only"  # requires Cargo 1.71
 
 [package]
 name = "winnow"
@@ -151,10 +151,10 @@ automod = "1.0.15"
 annotate-snippets = "0.11.4"
 anyhow = "1.0.100"
 
-[profile.bench]
-debug = true
-lto = true
-codegen-units = 1
+# [profile.bench]
+# debug = true
+# lto = true
+# codegen-units = 1
 
 [[example]]
 name = "arithmetic"
